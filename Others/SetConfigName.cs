@@ -62,6 +62,9 @@ namespace Milimoe
         private void BtnSave_Click(object sender, EventArgs e)
         {
             ModuleName = TextModule.Text;
+            CharacterManager.ModuleName = ModuleName;
+            SkillManager.ModuleName = ModuleName;
+            ItemManager.ModuleName = ModuleName;
             CharacterManager.ConfigName = TextCharacter.Text;
             SkillManager.ConfigName = TextSkill.Text;
             ItemManager.ConfigName = TextItem.Text;
